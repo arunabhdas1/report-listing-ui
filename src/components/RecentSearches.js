@@ -14,7 +14,7 @@ class RecentSearches extends Component{
         this.props.searchBtnClick(val);
     }
     componentWillMount(){
-        fetch('http://localhost:3000/api/data/recentSearches')
+        fetch('https://report-listing-backend.herokuapp.com/api/data/recentSearches')
         .then(res => res.json())
         .then(data => {
         let result =[];

@@ -14,7 +14,7 @@ class App extends Component {
   }
 
   searchBtnClick = (key) => {
-    let url = 'http://localhost:3000/api/data/search/' + key;
+    let url = 'https://report-listing-backend.herokuapp.com/api/data/search/' + key;
     fetch(url)
       .then(res => res.json())
       .then(data => {

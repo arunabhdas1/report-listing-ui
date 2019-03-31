@@ -13,7 +13,7 @@ class SearchBox extends Component{
         this.getSuggestions(key);
     }
     getSuggestions = (key) => {
-        let url = 'http://localhost:3000/api/data/suggestion/' + key;
+        let url = 'https://report-listing-backend.herokuapp.com/api/data/suggestion/' + key;
         fetch(url)
             .then(res => res.json())
             .then(result => {
